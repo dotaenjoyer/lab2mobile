@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.lab2mobile.databinding.FragmentSecondBinding;
@@ -24,6 +24,12 @@ public class SecondFragment extends Fragment {
         binding = FragmentSecondBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 
 }
