@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            app:title="Лабораторна робота 2"
             app:popupTheme="@style/Theme.Lab2mobile.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
